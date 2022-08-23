@@ -1,49 +1,3 @@
-/*
-//Player Name in this Array *************************Vip
-const playerNameArray = []
-
-function displayPlayerName() {
-    const perPlayerTableName = document.getElementById('totalBestPlayerName')
-    perPlayerTableName.innerHTML = playerNameArray.length
-
-    const playerName = document.getElementById('perPlayerName')
-    playerName.innerText = ''
-    
-    const tr = document.createElement('tr')
-    tr.innerHTML = `
-    <th></th>
-    <td>Player Name</td>
-    <td>${playerNameArray.length}</td>
-    `
-    playerName.appendChild(tr)
-
-    for (let i = 0; i < playerNameArray.length; i++){
-        const totalName = playerNameArray[i].playerName
-
-        const tr = document.createElement('tr')
-        tr.innerHTML = `
-        <tr>
-        <th></th> 
-        <td>${totalName}</td>
-        </tr>
-        `
-        playerName.appendChild(tr)
-    }
-}
-
-function addToCart(elemnet) {
-    const playerName = elemnet.parentNode.children[0].innerText
-    const PlayerNameObject = {
-        playerName: playerName
-    }
-    playerNameArray.push(PlayerNameObject)
-    // console.log(playerName);
-    displayPlayerName(playerNameArray)
-}
-*/
-
-
-
 
 //Player Name in this Array *************************Vip
 const playerNameArray = []
@@ -86,7 +40,6 @@ function addToCart(elemet) {
         playerName: playerName
     }
     playerNameArray.push(PlayerNameObject)
-    // console.log(playerName);
     displayPlayerName(playerNameArray)
 }
 
@@ -117,17 +70,14 @@ document.getElementById('calculat-btn').addEventListener('click', function () {
 
 
     const perPlayerInput = getInputFieldValueById('perPlayerInputField')
-    // console.log(perPlayerInput);
 
 
     const playerQuentity = getTextElementValueById('totalBestPlayerName')
-    // console.log(playerQuentity);
 
 
 
 
     const totalAmount = perPlayerInput * playerQuentity
-    // console.log(totalAmount);
 
     let totalExpenceValueStr = document.getElementById('totalExpence')
     let totalExpenceValue = totalExpenceValueStr.innerText
@@ -153,14 +103,11 @@ document.getElementById('calculat-btn').addEventListener('click', function () {
 document.getElementById('calculat-total-btn').addEventListener('click', function () {
 
     const managerInput = getInputFieldValueById('managerInput')
-    // console.log(managerInput);
     
     const coachInput = getInputFieldValueById('coachInput')
-    // console.log(coachInput);
 
 
     const totalInput = coachInput + managerInput
-    // console.log(totalInput);
     
 
 //need total enter amount fron calculate button
@@ -178,8 +125,6 @@ document.getElementById('calculat-total-btn').addEventListener('click', function
 
 
     totalAmountValueStr.innerText = totalExpenceAmount
-
-
 
 
 })
