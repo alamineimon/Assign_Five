@@ -70,12 +70,7 @@ document.getElementById('calculat-btn').addEventListener('click', function () {
 
 
     const perPlayerInput = getInputFieldValueById('perPlayerInputField')
-
-
     const playerQuentity = getTextElementValueById('totalBestPlayerName')
-
-
-
 
     const totalAmount = perPlayerInput * playerQuentity
 
@@ -84,32 +79,17 @@ document.getElementById('calculat-btn').addEventListener('click', function () {
     let totalExpence = parseFloat(totalExpenceValue)
 
     totalExpenceValueStr.innerText = totalAmount
-
-
 })
 
-
-
-
-
-
-
-
-
 //calculate Total button************************************************
-
-
 
 document.getElementById('calculat-total-btn').addEventListener('click', function () {
 
     const managerInput = getInputFieldValueById('managerInput')
-    
     const coachInput = getInputFieldValueById('coachInput')
-
 
     const totalInput = coachInput + managerInput
     
-
 //need total enter amount fron calculate button
     let totalExpenceValueStr = document.getElementById('totalExpence')
     let totalExpenceValue = totalExpenceValueStr.innerText
@@ -118,14 +98,13 @@ document.getElementById('calculat-total-btn').addEventListener('click', function
 
 
     const totalExpenceAmount = totalExpence + totalInput
+    
 
     const totalAmountValueStr = document.getElementById('totalAmount')
     const totalAmountValues = totalAmountValueStr.innerText
     const totalAmountValue = parseFloat(totalAmountValues)
 
-
     totalAmountValueStr.innerText = totalExpenceAmount
-
 
 })
 
