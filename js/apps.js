@@ -141,3 +141,48 @@ document.getElementById('calculat-btn').addEventListener('click', function () {
 
 
 
+
+
+
+
+
+//calculate Total button************************************************
+
+
+
+document.getElementById('calculat-total-btn').addEventListener('click', function () {
+
+    const managerInput = getInputFieldValueById('managerInput')
+    // console.log(managerInput);
+    
+    const coachInput = getInputFieldValueById('coachInput')
+    // console.log(coachInput);
+
+
+    const totalInput = coachInput + managerInput
+    // console.log(totalInput);
+    
+
+//need total enter amount fron calculate button
+    let totalExpenceValueStr = document.getElementById('totalExpence')
+    let totalExpenceValue = totalExpenceValueStr.innerText
+    let totalExpence = parseFloat(totalExpenceValue)
+    totalExpence.innerText = totalInput
+
+
+    const totalExpenceAmount = totalExpence + totalInput
+
+    const totalAmountValueStr = document.getElementById('totalAmount')
+    const totalAmountValues = totalAmountValueStr.innerText
+    const totalAmountValue = parseFloat(totalAmountValues)
+
+
+    totalAmountValueStr.innerText = totalExpenceAmount
+
+
+
+
+})
+
+
+
